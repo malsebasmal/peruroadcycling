@@ -13,8 +13,8 @@
 :root {
   --blanco: #ffffff;
   /* Tipografía */
-  --tipo-principal: 'Lato', sans-serif;
-  --tipo-secundaria: 'Poppins', sans-serif;
+  --tipo-principal: 'Inter Variable', sans-serif;
+  --tipo-secundaria: 'Permanent Marker', cursive;
 }
 
 /* Las adaptamos al modo oscuro */
