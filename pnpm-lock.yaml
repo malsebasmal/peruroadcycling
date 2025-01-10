@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@fontsource-variable/inter':
+        specifier: ^5.1.1
+        version: 5.1.1
       '@fontsource/permanent-marker':
         specifier: ^5.1.1
         version: 5.1.1
@@ -341,6 +344,9 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource-variable/inter@5.1.1':
+    resolution: {integrity: sha512-OpXFTmiH6tHkYijMvQTycFKBLK4X+SRV6tet1m4YOUH7SzIIlMqDja+ocDtiCA72UthBH/vF+3ZtlMr2rN/wIw==}
 
   '@fontsource/permanent-marker@5.1.1':
     resolution: {integrity: sha512-ccJhQs9cuTpCSTIEgc5LVOgPghkoDrW3WzPoFgDp8c+tuPFpIrAOpXy/OvukUk7t60LnabF+jW9TFA0b2q3u6A==}
@@ -1849,6 +1855,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.24.2':
     optional: true
+
+  '@fontsource-variable/inter@5.1.1': {}
 
   '@fontsource/permanent-marker@5.1.1': {}
 
