@@ -13,6 +13,7 @@
     "@fontsource-variable/inter": "^5.1.1",
     "@fontsource/permanent-marker": "^5.1.1",
     "astro": "^5.1.4",
+    "swiper": "^11.2.1",
     "tailwindcss": "^3.4.17"
   }
 }
