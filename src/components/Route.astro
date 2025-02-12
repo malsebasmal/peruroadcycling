@@ -1,15 +1,29 @@
 ---
 import Badge from "./Badge.astro";
 
-const { classExtra, name, difficult, map } = Astro.props
+const { name, difficult, map } = Astro.props
+
+const medium = "text-yellow-500 border-yellow-500 bg-yellow-100"
+const hard = "text-red-500 border-red-500 bg-red-100"
+const easy = "text-green-500 border-green-500 bg-green-100"
+
+let color
+
+if (difficult === "media") {
+  color = medium
+} else if (difficult === "fácil") {
+  color = easy
+} else if (difficult === "difícil") {
+  color = hard
+}
 ---
 
-<div class={`w-[35rem] bg-blue-400 ${classExtra}`}>
-  <div class="flex justify-center items-center gap-4 pt-4 pb-4">
+<div class={`w-[35rem] rounded-xl border-2 border-solid ${color}`}>
+  <div class="flex justify-center items-center gap-4 py-4">
     <h3 class="font-bold text-3xl">{name}</h3>
     <Badge difficult={difficult}/>
   </div>
   <div>
-    <img src={map} alt="map" class="w-full">
+    <img src={map} alt="map" class="w-full rounded-xl">
   </div>
 </div>

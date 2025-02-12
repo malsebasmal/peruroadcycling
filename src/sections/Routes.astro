@@ -3,11 +3,15 @@ import Route from "@/components/Route.astro"
 import { routes } from "@/assets/routes.js"
 ---
 
-<section class="mt-14 px-4 pr-0 w-full h-auto">
-  <div class="">
-    {routes.map((route) => 
-      <Route classExtra="" name={route.name} difficult={route.difficult} map={route.map}/>
-    )}
+<section class="mt-10 px-4 w-full h-auto">
+  <div class="bg-white mx-20 px-20 py-10 rounded-2xl">
+    <ul class="flex gap-10 overflow-x-scroll">
+      {routes.map((route) =>
+        <li>
+          <Route name={route.name} difficult={route.difficult} map={route.map}/>
+        </li>
+      )}
+    </ul>
   </div>
 </section>
 
