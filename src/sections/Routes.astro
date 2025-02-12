@@ -1,17 +1,25 @@
 ---
-import Route from "@/components/Route.astro"
-import { routes } from "@/assets/routes.js"
+import Route from "@/components/Route.astro";
+import { routes } from "@/assets/routes.js";
+import Slider from "@/components/Slider.jsx";
 ---
 
 <section class="mt-10 px-4 w-full h-auto">
   <div class="bg-white mx-20 px-20 py-10 rounded-2xl">
-    <ul class="flex gap-10 overflow-x-scroll">
-      {routes.map((route) =>
-        <li>
-          <Route name={route.name} difficult={route.difficult} map={route.map}/>
-        </li>
-      )}
-    </ul>
+    <Slider client:load>
+      {routes.map((route) => (
+        <Route name={route.name} difficult={route.difficult} map={route.map} gotThere={route.gotThere} />
+      ))}
+    </Slider>
   </div>
 </section>
 
+<style>
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>

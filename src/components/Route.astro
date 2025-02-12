@@ -1,7 +1,7 @@
 ---
 import Badge from "./Badge.astro";
 
-const { name, difficult, map } = Astro.props
+const { name, difficult, map, gotThere } = Astro.props
 
 const medium = "text-yellow-500 border-yellow-500 bg-yellow-100"
 const hard = "text-red-500 border-red-500 bg-red-100"
@@ -23,7 +23,11 @@ if (difficult === "media") {
     <h3 class="font-bold text-3xl">{name}</h3>
     <Badge difficult={difficult}/>
   </div>
-  <div>
-    <img src={map} alt="map" class="w-full rounded-xl">
+  <div set:html={map}>
+  </div>
+  <div class="flex my-4 justify-center items-center">
+    <a href={gotThere} target="_blank" class="inline-block py-2 px-4 font-bold text-xl text-blue-500 bg-blue-100 border-2 border-solid border-blue-500 rounded-xl hover:bg-blue-500 hover:text-blue-100">
+      ¿Cómo llegar?
+    </a>
   </div>
 </div>
