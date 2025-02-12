@@ -1,7 +1,13 @@
 ---
 import Route from "@/components/Route.astro"
+import { routes } from "@/assets/routes.js"
 ---
 
-<section class="px-4 pr-0 w-full h-auto">
-  <Route />
+<section class="mt-14 px-4 pr-0 w-full h-auto">
+  <div class="">
+    {routes.map((route) => 
+      <Route classExtra="" name={route.name} difficult={route.difficult} map={route.map}/>
+    )}
+  </div>
 </section>
+
