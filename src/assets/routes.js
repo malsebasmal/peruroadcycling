@@ -48,7 +48,7 @@ export const routes = [
     gotThere: "https://maps.google.com/maps/dir//Placita+Cieneguilla+V5JP%2BHCR+Cieneguilla+15593/@-12.1185147,-76.813996,13z/data=!4m5!4m4!1m0!1m2!1m1!1s0x9105ebfd486f66ad:0xcf0d7f7166d89d5d"
   },
   {
-    name: "Cto. de Playas de la Costa Verde",
+    name: "Circuito de la Costa Verde",
     difficult: "fácil",
     map: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9029.232955925603!2d-77.07646297176962!3d-12.099630596318377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b7e0612acf1b%3A0x1d842aaaf2133bfc!2sCto.%20de%20Playas!5e0!3m2!1ses-419!2spe!4v1739397126993!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
     gotThere: "https://maps.google.com/maps/dir//Cto.+de+Playas/@-12.0948692,-77.0790092,15z/data=!4m5!4m4!1m0!1m2!1m1!1s0x9105b7e0612acf1b:0x1d842aaaf2133bfc"
