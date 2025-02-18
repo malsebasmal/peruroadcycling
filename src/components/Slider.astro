@@ -1,0 +1,27 @@
+---
+import ArrowLeft from "@/assets/ArrowLeft.astro";
+import ArrowRight from "@/assets/ArrowRight.astro";
+---
+
+<div
+  id="centered"
+  data-carousel='{ "loadingClasses": "opacity-0", "isCentered": true, "slidesQty": { "xs": 1, "lg": 2.2 }, "isInfiniteLoop": true }'
+  class="relative w-full"
+>
+  <div class="carousel">
+    <div class="carousel-body h-full opacity-0">
+      <!-- Slides -->
+      <slot />
+    </div>
+  </div>
+
+  <!-- Previous Slide -->
+  <button type="button" class="carousel-prev">
+    <ArrowLeft class="stroke-[#00000040] size-16 bg-transparent text-transparent fill-transparent"/>
+  </button>
+
+  <!-- Next Slide -->
+  <button type="button" class="carousel-next">
+    <ArrowRight class="stroke-[#00000040] size-16 bg-transparent text-transparent fill-transparent"/>
+  </button>
+</div>
