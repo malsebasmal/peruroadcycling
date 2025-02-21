@@ -3,13 +3,13 @@ import { Image } from "astro:assets";
 import bikeImage from "@/assets/bike.svg"
 ---
 
-<section class="px-4 pr-0 w-full h-[80vh]">
-  <div class="w-full h-full flex items-center justify-between relative">
-    <h1 class="pl-40 text-white font-marker text-7xl">
+<section class="px-4 pr-0 w-full h-[60vh] md:h-[70vh] lg:h-[80vh]">
+  <div class="w-full h-full flex flex-col lg:flex-row items-center justify-center lg:justify-between relative">
+    <h1 class="text-4xl md:text-6xl xl:text-7xl lg:pl-40 pt-20 lg:pt-0 text-white font-marker">
       Las mejores rutas <br> de ciclismo de ruta <br> en
-      <span class="text-8xl bg-gradient-to-tl from-amber-500 to-yellow-400 bg-clip-text text-transparent">Lima, Perú</span>
+      <span class="text-5xl md:text-8xl bg-gradient-to-tl from-amber-500 to-yellow-400 bg-clip-text text-transparent">Lima, Perú</span>
     </h1>
-    <Image src={bikeImage} alt="Bicicleta de ruta/carretera" class="absolute size-[65rem] right-0 bottom-0"/>
+    <Image src={bikeImage} alt="Bicicleta de ruta/carretera" class="lg:absolute size-96 md:size-[40rem] xl:size-[65rem] right-0 bottom-0"/>
   </div>
 </section>
 
