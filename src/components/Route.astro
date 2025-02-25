@@ -18,9 +18,9 @@ if (difficult === "media") {
 }
 ---
 
-<div class={`w-[35rem] h-fit flex-shrink-0 rounded-xl border-2 border-solid ${color}`}>
-  <div class="flex justify-center items-center gap-4 py-4">
-    <h3 class="font-bold text-3xl">{name}</h3>
+<div class={`w-[20rem] md:w-[35rem] h-fit flex-shrink-0 rounded-xl border-2 border-solid ${color}`}>
+  <div class="flex justify-center items-center gap-2 lg:gap-4 py-4">
+    <h3 class="font-bold text-xl lg:text-3xl">{name}</h3>
     <Badge difficult={difficult}/>
   </div>
   <div set:html={map}>
